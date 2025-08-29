@@ -8,7 +8,6 @@ export default function LoginNavbar() {
           <button>Register</button>
         </div>
       </div>
-      {/**two containers inside loginNavbar - one is width 70 the other is 30*/}
     </>
   );
 }

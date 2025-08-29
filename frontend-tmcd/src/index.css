@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   @apply bg-gray-800;
   /* background-color: rgb(129, 128, 128); */
+}
+
+button {
+  cursor: pointer;
 }

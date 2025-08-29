@@ -5,9 +5,29 @@
 /*LoginNavbar Component*/
 
 #loginNavbar {
-  @apply h-1/5 bg-black text-white flex flex-row justify-between items-center;
+  @apply h-1/5 bg-black text-white flex flex-row justify-between items-center sticky top-0 right-0 left-0;
 }
 
 #loginNavbar button {
   @apply bg-gray-800 text-white rounded-lg px-5 py-2;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
+
+#carouselTrack {
+  animation: scroll 30s linear infinite;
+}
+
+#carouselTrack img {
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
 }

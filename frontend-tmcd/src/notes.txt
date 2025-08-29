@@ -1,0 +1,1 @@
+All unused assets and code are stored here.

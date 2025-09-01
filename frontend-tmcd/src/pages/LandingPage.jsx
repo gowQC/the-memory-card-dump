@@ -8,92 +8,89 @@ export default function LandingPage() {
   return (
     <div className="h-screen">
       <LoginNavbar></LoginNavbar>
-      <h1 className="text-white m-15 text-5xl rounded-4xl p-4 text-center font-serif ">
+      <h1 className="heading-primary">
         Welcome to the Memory Dump! Here, you can blog about your favorite
         games, capture awesome moments, and share your memories with friends and
         strangers.
       </h1>
-      <h2 className="text-white m-3 text-2xl text-center">
-        Peep the top Memories
-      </h2>
-      <div
-        id="carousel"
-        className="m-auto w-[600px] h-[300px] overflow-x-hidden overflow-y-hidden"
-      >
-        <div id="carouselTrack" className="flex flex-row w-[600px] h-[300px]">
-          <img src={image1} alt="" />
-          <img src={image2} alt="" />
-          <img src={image3} alt="" />
-          <img src={image4} alt="" />
+      <h2 className="heading-secondary">Peep the top Memories</h2>
+      <div className="carousel-container">
+        <div className="carousel-track">
+          <img className="carousel-image" src={image1} alt="" />
+          <img className="carousel-image" src={image2} alt="" />
+          <img className="carousel-image" src={image3} alt="" />
+          <img className="carousel-image" src={image4} alt="" />
           {/**will be the 1 duplicate image to simulate loop*/}
-          <img src={image1} alt="" />
+          <img className="carousel-image" src={image1} alt="" />
         </div>
       </div>
-
-      {/* <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2>
-      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
-        Welcome to the Memory Dump! Here, you can blog about your favorite
-        games, capture awesome moments, and share your memories with friends and
-        strangers.
-      </h1>
-      <h2 className="text-white m-30 text-2xl text-center">
-        Where the memories get saved (image carousel)
-      </h2> */}
     </div>
   );
+}
+
+{
+  /* <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2>
+      <h1 className="text-white m-30 text-5xl rounded-4xl p-4 text-center border-6 border-black font-serif ">
+        Welcome to the Memory Dump! Here, you can blog about your favorite
+        games, capture awesome moments, and share your memories with friends and
+        strangers.
+      </h1>
+      <h2 className="text-white m-30 text-2xl text-center">
+        Where the memories get saved (image carousel)
+      </h2> */
 }

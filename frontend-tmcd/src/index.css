@@ -1,14 +1,115 @@
 @import "tailwindcss";
 
+/* Designs for Ze Projecto */
+
+/* 
+==========================
+Color Palette */
+:root {
+  --primary-bg: #374151; /*  Main background */
+  --secondary-bg: #1f2937; /*  2nd BG Color */
+  --accent-bg: #000000; /*  Navbar and important elements */
+  --text-primary: #ffffff; /* Font Color */
+  --text-secondary: #d1d5db; /* Text Shadows Secondary color etc */
+  --button-bg: #374151; /* - Button background */
+  --button-hover: #4b5563; /*  Button hover state */
+  --border-color: #6b7280; /*  Borders and dividers */
+  --input-bg: #ffffff; /* Form inputs */
+  --error-color: #ef4444; /* Error messages */
+  --success-color: #10b981; /*  Success messages */
+}
+
+/* 
+===================
+GLobal styles */
 * {
   box-sizing: border-box;
 }
 
 body {
-  @apply bg-gray-800;
-  /* background-color: rgb(129, 128, 128); */
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
 }
 
 button {
   cursor: pointer;
+}
+
+/*
+=======================================
+Component Classes - Reusable Styles */
+
+.navbar-main {
+  @apply h-20 flex flex-row justify-between items-center sticky top-0 right-0 left-0 px-6 z-50;
+  background-color: var(--accent-bg);
+  color: var(--text-primary);
+}
+
+.navbar-logo {
+  @apply text-4xl font-bold;
+  color: var(--text-primary);
+}
+
+.navbar-button-container {
+  @apply w-2/5 px-20 flex flex-row justify-around text-2xl;
+}
+
+.navbar-button {
+  @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+}
+
+.navbar-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Page Layout Components */
+.page-container {
+  @apply min-h-screen;
+  background-color: var(--primary-bg);
+}
+
+/* Typography Components - Headings */
+.heading-primary {
+  @apply text-5xl font-serif text-center mb-8 p-4;
+  color: var(--text-primary);
+}
+
+.heading-secondary {
+  @apply text-2xl text-center mb-3;
+  color: var(--text-primary);
+}
+
+/* Carousel Components  */
+.carousel-container {
+  @apply m-auto overflow-hidden;
+  width: 600px;
+  height: 300px;
+}
+
+.carousel-track {
+  @apply flex flex-row;
+  width: 600px;
+  height: 300px;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-image {
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Carousel Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-400%);
+  }
 }

@@ -1,9 +1,7 @@
-@import "tailwindcss";
-
 /**COMPONENTS CSS**/
 
 /*LoginNavbar Component*/
-
+/* 
 #loginNavbar {
   @apply h-1/5 bg-black text-white flex flex-row justify-between items-center sticky top-0 right-0 left-0;
 }
@@ -30,4 +28,4 @@
   width: 600px;
   height: 300px;
   object-fit: cover;
-}
+} */

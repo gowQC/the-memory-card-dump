@@ -13,7 +13,7 @@ export default function LandingPage() {
         games, capture awesome moments, and share your memories with friends and
         strangers.
       </h1>
-      <h2 className="heading-secondary">Peep the top Memories</h2>
+      <h2 className="heading-secondary">Peep the top Memories... Davon</h2>
       <div className="carousel-container">
         <div className="carousel-track">
           <img className="carousel-image" src={image1} alt="" />

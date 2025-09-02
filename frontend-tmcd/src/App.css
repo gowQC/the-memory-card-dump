@@ -1,15 +1,73 @@
-/**COMPONENTS CSS**/
+@import "tailwindcss";
 
-/*LoginNavbar Component*/
-/* 
-#loginNavbar {
-  @apply h-1/5 bg-black text-white flex flex-row justify-between items-center sticky top-0 right-0 left-0;
+/*
+=======================================
+Component Classes - Reusable Styles */
+
+.navbar-main {
+  @apply h-20 flex flex-row justify-between items-center sticky top-0 right-0 left-0 px-6 z-50;
+  background-color: var(--accent-bg);
+  color: var(--text-primary);
 }
 
-#loginNavbar button {
-  @apply bg-gray-800 text-white rounded-lg px-5 py-2;
+.navbar-logo {
+  @apply text-4xl font-bold;
+  color: var(--text-primary);
 }
 
+.navbar-button-container {
+  @apply w-2/5 px-20 flex flex-row justify-around text-2xl;
+}
+
+.navbar-button {
+  @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+}
+
+.navbar-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Page Layout Components */
+.page-container {
+  @apply min-h-screen;
+  background-color: var(--primary-bg);
+}
+
+/* Typography Components - Headings */
+.heading-primary {
+  @apply text-5xl font-serif text-center mb-8 p-4;
+  color: var(--text-primary);
+}
+
+.heading-secondary {
+  @apply text-2xl text-center mb-3;
+  color: var(--text-primary);
+}
+
+/* Carousel Components  */
+.carousel-container {
+  @apply m-auto overflow-hidden;
+  width: 600px;
+  height: 300px;
+}
+
+.carousel-track {
+  @apply flex flex-row;
+  width: 600px;
+  height: 300px;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-image {
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Carousel Animation */
 @keyframes scroll {
   from {
     transform: translateX(0px);
@@ -18,14 +76,3 @@
     transform: translateX(-400%);
   }
 }
-
-#carouselTrack {
-  animation: scroll 30s linear infinite;
-}
-
-#carouselTrack img {
-  flex-shrink: 0;
-  width: 600px;
-  height: 300px;
-  object-fit: cover;
-} */

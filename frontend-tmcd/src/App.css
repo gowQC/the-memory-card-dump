@@ -46,6 +46,12 @@ Component Classes - Reusable Styles */
   color: var(--text-primary);
 }
 
+/* Form Container Classes */
+
+.error-message {
+  color: var(--error-color);
+}
+
 /* Carousel Components  */
 .carousel-container {
   @apply m-auto overflow-hidden;
